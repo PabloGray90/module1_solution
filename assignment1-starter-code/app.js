@@ -18,6 +18,7 @@ function MsgController($scope) {
       } else {
           $scope.numOfItems = 0;
       }
+      console.log("The number of items is: " + $scope.numOfItems)
       $scope.message = $scope.setMessage($scope.numOfItems);
     };
 
@@ -31,11 +32,8 @@ function MsgController($scope) {
       }
     };
 
-    $scope.showMessage = function (){
-      var msg = $scope.setMessage($scope.numOfItems);
-      return msg;
-    }
-    console.log("The number of items is: " + $scope.numOfItems)
+
+
     }
 
 })();
